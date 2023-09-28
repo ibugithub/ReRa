@@ -1,0 +1,2 @@
+module RandomMessageHelper
+end

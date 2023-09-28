@@ -1,0 +1,27 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: ReRa
+  username: postgres
+  password: 12345
+  host: localhost
+
+
+test:
+  <<: *default
+  database: ReRa-test
+  username: postgres
+  password: 12345
+  host: localhost
+
+production:
+  <<: *default
+  database: ReRa
+  username: postgres
+  password: 12345
+  host: localhost
