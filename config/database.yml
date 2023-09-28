@@ -6,22 +6,22 @@ default: &default
 
 development:
   <<: *default
-  database: R-Blog
-  username: Ibu
-  password: ibuPostData1749%
+  database: ReRa
+  username: postgres
+  password: 12345
   host: localhost
 
 
 test:
   <<: *default
-  database: R-Blog
-  username: Ibu
-  password: ibuPostData1749%
+  database: ReRa-test
+  username: postgres
+  password: 12345
   host: localhost
 
 production:
   <<: *default
-  database: R-Blog
-  username: Ibu
-  password: ibuPostData1749%
+  database: ReRa
+  username: postgres
+  password: 12345
   host: localhost
