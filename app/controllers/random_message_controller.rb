@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class RandomMessageController < ApplicationController
   def index
     message = Message.order('RANDOM()').first
